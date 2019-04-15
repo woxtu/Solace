@@ -14,6 +14,8 @@
 		4301FDAA225CF042007B861C /* Solace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301FDA8225CF042007B861C /* Solace.swift */; };
 		4301FDAC225CF0E0007B861C /* FileInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301FDAB225CF0E0007B861C /* FileInterceptor.swift */; };
 		4301FDAD225CF0E0007B861C /* FileInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301FDAB225CF0E0007B861C /* FileInterceptor.swift */; };
+		4301FDAF225CFF43007B861C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301FDAE225CFF43007B861C /* Logger.swift */; };
+		4301FDB0225CFF43007B861C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301FDAE225CFF43007B861C /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 		4301FD7B225CEB07007B861C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4301FDA8225CF042007B861C /* Solace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solace.swift; sourceTree = "<group>"; };
 		4301FDAB225CF0E0007B861C /* FileInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInterceptor.swift; sourceTree = "<group>"; };
+		4301FDAE225CFF43007B861C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 				4301FD6E225CEB07007B861C /* Solace.h */,
 				4301FD6F225CEB07007B861C /* Info.plist */,
 				4301FDAB225CF0E0007B861C /* FileInterceptor.swift */,
+				4301FDAE225CFF43007B861C /* Logger.swift */,
 				4301FDA8225CF042007B861C /* Solace.swift */,
 			);
 			path = Solace;
@@ -221,6 +225,7 @@
 			files = (
 				4301FDA9225CF042007B861C /* Solace.swift in Sources */,
 				4301FDAC225CF0E0007B861C /* FileInterceptor.swift in Sources */,
+				4301FDAF225CFF43007B861C /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +235,7 @@
 			files = (
 				4301FDAA225CF042007B861C /* Solace.swift in Sources */,
 				4301FD7A225CEB07007B861C /* SolaceTests.swift in Sources */,
+				4301FDB0225CFF43007B861C /* Logger.swift in Sources */,
 				4301FDAD225CF0E0007B861C /* FileInterceptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
