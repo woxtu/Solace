@@ -16,6 +16,10 @@
 		4301FDAD225CF0E0007B861C /* FileInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301FDAB225CF0E0007B861C /* FileInterceptor.swift */; };
 		4301FDAF225CFF43007B861C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301FDAE225CFF43007B861C /* Logger.swift */; };
 		4301FDB0225CFF43007B861C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301FDAE225CFF43007B861C /* Logger.swift */; };
+		43C353232264C96100D8CB82 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C353222264C96100D8CB82 /* MainWindow.swift */; };
+		43C353242264CA9D00D8CB82 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C353222264C96100D8CB82 /* MainWindow.swift */; };
+		43C353262264CC2B00D8CB82 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C353252264CC2B00D8CB82 /* MainViewController.swift */; };
+		43C353272264CC2B00D8CB82 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C353252264CC2B00D8CB82 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 		4301FDA8225CF042007B861C /* Solace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solace.swift; sourceTree = "<group>"; };
 		4301FDAB225CF0E0007B861C /* FileInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInterceptor.swift; sourceTree = "<group>"; };
 		4301FDAE225CFF43007B861C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		43C353222264C96100D8CB82 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		43C353252264CC2B00D8CB82 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,8 @@
 				4301FD6F225CEB07007B861C /* Info.plist */,
 				4301FDAB225CF0E0007B861C /* FileInterceptor.swift */,
 				4301FDAE225CFF43007B861C /* Logger.swift */,
+				43C353252264CC2B00D8CB82 /* MainViewController.swift */,
+				43C353222264C96100D8CB82 /* MainWindow.swift */,
 				4301FDA8225CF042007B861C /* Solace.swift */,
 			);
 			path = Solace;
@@ -223,9 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C353232264C96100D8CB82 /* MainWindow.swift in Sources */,
 				4301FDA9225CF042007B861C /* Solace.swift in Sources */,
 				4301FDAC225CF0E0007B861C /* FileInterceptor.swift in Sources */,
 				4301FDAF225CFF43007B861C /* Logger.swift in Sources */,
+				43C353262264CC2B00D8CB82 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +245,8 @@
 			files = (
 				4301FDAA225CF042007B861C /* Solace.swift in Sources */,
 				4301FD7A225CEB07007B861C /* SolaceTests.swift in Sources */,
+				43C353242264CA9D00D8CB82 /* MainWindow.swift in Sources */,
+				43C353272264CC2B00D8CB82 /* MainViewController.swift in Sources */,
 				4301FDB0225CFF43007B861C /* Logger.swift in Sources */,
 				4301FDAD225CF0E0007B861C /* FileInterceptor.swift in Sources */,
 			);
