@@ -48,6 +48,7 @@ class MainViewController: UIViewController {
     }
     
     @objc func buttonDidTap(_ sender: UIButton) {
-        print(sender)
+        let viewController = ConsoleViewController()
+        present(viewController, animated: true)
     }
 }

@@ -13,7 +13,11 @@ protocol LoggerDelegate: class {
 }
 
 class Logger {
-    var delegate: LoggerDelegate?
+    var delegate: LoggerDelegate? {
+        didSet {
+            delegate?.dataDidUpdate(data: data)
+        }
+    }
     
     private(set) var data = Data() {
         didSet {
