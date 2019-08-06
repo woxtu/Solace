@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol LoggerDelegate: class {
+protocol LoggerDelegate: AnyObject {
     func dataDidUpdate(data: Data)
 }
 
@@ -18,13 +18,13 @@ class Logger {
             delegate?.dataDidUpdate(data: data)
         }
     }
-    
+
     private(set) var data = Data() {
         didSet {
             delegate?.dataDidUpdate(data: data)
         }
     }
-    
+
     private var stdoutInterceptor: FileInterceptor?
     private var stderrInterceptor: FileInterceptor?
 
@@ -36,7 +36,7 @@ class Logger {
             self?.data.append($0)
         }
     }
-    
+
     func clear() {
         data.removeAll()
     }

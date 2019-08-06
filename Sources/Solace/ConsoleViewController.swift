@@ -10,9 +10,10 @@ import UIKit
 
 class ConsoleViewController: UIViewController {
     private lazy var doneButton: UIBarButtonItem = {
-        return UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonDidTap(_:)))
+        UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonDidTap(_:)))
     }()
-    
+
+    // swiftlint:disable:next identifier_name
     private lazy var navigationItem_: UINavigationItem = {
         let navigationItem = UINavigationItem()
         navigationItem.rightBarButtonItem = doneButton
@@ -26,16 +27,16 @@ class ConsoleViewController: UIViewController {
         navigationBar.setItems([navigationItem_], animated: false)
         return navigationBar
     }()
-    
+
     private lazy var consoleView = ConsoleView()
-    
+
     override func loadView() {
         super.loadView()
-        
+
         view.backgroundColor = .darkGray
         view.addSubview(navigationBar)
         view.addSubview(consoleView)
-        
+
         if #available(iOS 11.0, *) {
             NSLayoutConstraint.activate([
                 navigationBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -58,13 +59,13 @@ class ConsoleViewController: UIViewController {
             ])
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         Solace.logger?.delegate = self
     }
-    
+
     @objc func doneButtonDidTap(_ sender: UIBarButtonItem) {
         dismiss(animated: true)
     }

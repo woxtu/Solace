@@ -10,7 +10,7 @@ import Foundation
 
 class FileInterceptor {
     private let pipe = Pipe()
-    
+
     init(fileHandle: FileHandle, handler: @escaping (Data) -> Void) {
         let outputHandle = FileHandle(fileDescriptor: dup(fileHandle.fileDescriptor))
         pipe.fileHandleForReading.readabilityHandler = {
@@ -18,7 +18,7 @@ class FileInterceptor {
             handler(data)
             outputHandle.write(data)
         }
-        
+
         dup2(pipe.fileHandleForWriting.fileDescriptor, fileHandle.fileDescriptor)
     }
 }

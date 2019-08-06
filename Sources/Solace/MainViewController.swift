@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
             return view == self ? nil : view
         }
     }
-    
+
     private lazy var button: UIButton = {
         let button = UIButton(type: .custom)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 30)
@@ -24,29 +24,29 @@ class MainViewController: UIViewController {
         button.sizeToFit()
         return button
     }()
-    
+
     override func loadView() {
         super.loadView()
-        
+
         view = View()
-        
+
         view.addSubview(button)
         button.center = CGPoint(x: UIScreen.main.bounds.width - 48, y: UIScreen.main.bounds.height - 48)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(buttonDidDrag(_:)))
         button.addGestureRecognizer(gestureRecognizer)
-        
+
         button.addTarget(self, action: #selector(buttonDidTap(_:)), for: .touchUpInside)
     }
-    
+
     @objc func buttonDidDrag(_ sender: UIPanGestureRecognizer) {
         sender.view?.center = sender.location(in: sender.view?.superview)
     }
-    
+
     @objc func buttonDidTap(_ sender: UIButton) {
         let viewController = ConsoleViewController()
         present(viewController, animated: true)
