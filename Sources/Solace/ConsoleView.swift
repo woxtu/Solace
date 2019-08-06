@@ -26,6 +26,12 @@ class ConsoleView: UITextView {
         set { attributedText = createAttributedString(string: newValue) }
     }
 
+    func scrollToBottom(animated: Bool) {
+        setContentOffset(CGPoint(x: 0, y: contentSize.height - frame.height), animated: animated)
+        isScrollEnabled = false
+        isScrollEnabled = true
+    }
+
     private func createAttributedString(string: String) -> NSAttributedString {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.headIndent = UIFont.systemFontSize * 2

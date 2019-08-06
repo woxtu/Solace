@@ -82,6 +82,7 @@ extension ConsoleViewController: LoggerDelegate {
         if let string = String(data: data, encoding: .utf8) {
             DispatchQueue.main.async { [weak self] in
                 self?.consoleView.log = string
+                self?.consoleView.scrollToBottom(animated: false)
             }
         }
     }
